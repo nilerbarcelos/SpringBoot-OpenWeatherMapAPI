@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app=appHbsis>
+<head>
+	<base href="/"/>
+	<meta charset="UTF-8"/>
+	<title>Insert title here</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-route.js"></script>
+	<script src="./js/app.js"></script>
+	<script src="./js/controller/cidade-controller.js"></script>
+	<script src="./js/controller/cidade-detalhe-controller.js"></script>
+</head>
+	<body ng-controller="cidadeController">
+	 <div>
+		 <form novalidate name="frmCidade">
+			 <div>
+			 	<label>Nome da cidade:</label>
+			 	<input type="text" ng-minlength="2" ng-maxlength="10" name="txtNome" ng-model="cidade.nome" required/>
+			 	<span ng-show="frmCidade.txtNome.$error.required && frmCidade.txtNome.$dirty">Campo Nome da Cidade é obrigatório.</span>
+			 </div>
+	
+			 <input type="button" value="Salvar" ng-click="salvarCidade()"/>
+		 </form>
+	
+		 <div ng-repeat="cidade in cidades">
+		 	{{cidade.id +' - ' + cidade.nome}} 
+		 	<input type="button" value="Excluir" ng-click="excluirCidade(cidade)"/>
+		 	<a href="cidades/{{cidade.id}}">Detalhes</a>
+		 </div>
+	 </div>
+	 <div ng-view="ng-view">
+
+</div>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="appHbsis">
+<head>
+	<base href="/"/>
+	<meta charset="UTF-8"/>
+	<title>Cadastro de Cidades</title>
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-route.js"></script>
+	<script src="./js/app.js"></script>
+	<script src="./js/controller/cidade-controller.js"></script>
+	<script src="./js/controller/cidade-detalhe-controller.js"></script>
+</head>
+	<body ng-controller="cidadeController">
+		<div role="navigation">
+			<div class="navbar navbar-inverse">
+				<a href="/" class="navbar-brand">HBSIS</a>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="/cidade">Cadastro de Cidades</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		 <div ng-view="ng-view">
+	
+		</div>
+	</body>
+</html>
