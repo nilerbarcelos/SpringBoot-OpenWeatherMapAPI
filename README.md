@@ -10,11 +10,11 @@
   - Para implementar o front-end utilizei thymeleaf, angularjs e bootstrap.
 
 **Banco de dados utilizado: MySQL**
-  - Criar um banco chamado: cidadesdb
-  - Usuário: root
+  - Criar um banco chamado: **cidadesdb**
+  - Usuário: **root**
   - Senha: 
   
   **Executando o Projeto**
   - Realizar clone: git clone https://github.com/nilerbarcelos/testeHbsis.git
-  - acessar o diretório onde o projeto foi clonado
-  - executar o comando: **mvn package && java -jar target/testeHbsis-0.0.1-SNAPSHOT.jar**
+  - Acessar o diretório onde o projeto foi clonado
+  - Executar o comando: `mvn package && java -jar target/testeHbsis-0.0.1-SNAPSHOT.jar`
