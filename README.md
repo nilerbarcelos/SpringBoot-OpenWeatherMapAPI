@@ -18,5 +18,4 @@
   - Realizar clone: `git clone https://github.com/nilerbarcelos/testeHbsis.git`
   - Acessar o diretório onde o projeto foi clonado
   - Executar o comando: `mvn package && java -jar target/testeHbsis-0.0.1-SNAPSHOT.jar`
-  
-  - Acessar o projeto no browser através do endereço: `http://localhost:8080/`
+  - Acessar o projeto no browser através do endereço: `http://localhost:8080/`
