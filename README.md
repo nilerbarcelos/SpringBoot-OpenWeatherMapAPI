@@ -1,4 +1,4 @@
-# Projeto teste HBSIS
+# Integração SpringBoot OpenWeatherMap API
 
 **Back-end**
   - Foi utilizado Spring Boot que atualmente é um framework com bastante aderência no mercado, isso facilita por ele disponibilizar toda infraestrutura de container embarcada;
@@ -15,7 +15,7 @@
   - Senha: 
   
   **Executando o Projeto**
-  - Realizar clone: `git clone https://github.com/nilerbarcelos/testeHbsis.git`
+  - Realizar clone: `git clone https://github.com/nilerbarcelos/SpringBoot-OpenWeatherMapAPI.git`
   - Acessar o diretório onde o projeto foi clonado
   - Executar o comando: `mvn package && java -jar target/testeHbsis-0.0.1-SNAPSHOT.jar`
   - Acessar o projeto no browser através do endereço: `http://localhost:8080/`
